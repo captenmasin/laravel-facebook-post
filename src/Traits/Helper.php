@@ -26,7 +26,7 @@ trait Helper
     /**
      * Generate a standardized success response.
      */
-    public function successResponse(string $message, ?string $postId = null): array
+    public function successResponse(string $message, ?array $data = null): array
     {
         $response = [
             'status'      => 'success',
@@ -34,8 +34,12 @@ trait Helper
             'message'     => $message,
         ];
 
-        if (!empty($postId)) {
-            $response['post_id'] = $postId;
+        if (!empty($data['id'])) {
+            $response['post_id'] = $data['id'];
+        }
+
+        if (!empty($data['post_id'])) {
+            $response['post_id'] = $data['post_id'];
         }
 
         return $response;
