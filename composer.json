@@ -1,0 +1,34 @@
+{
+  "name": "captenmasin/laravel-facebook-post",
+  "description": "Create, update, delete, and retrieve Facebook page posts using the Facebook Graph API in Laravel.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "laravel",
+    "facebook",
+    "facebook-graph-api",
+    "facebook-page",
+    "facebook-post"
+  ],
+  "homepage": "https://github.com/Captenmasin/laravel-facebook-post",
+  "autoload": {
+    "psr-4": {
+      "Captenmasin\\LaravelFacebookPost\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^8.3|^8.4",
+    "illuminate/support": "^^11.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Captenmasin\\LaravelFacebookPost\\Providers\\FacebookPostServiceProvider"
+      ],
+      "aliases": {
+        "FacebookPost": "Captenmasin\\LaravelFacebookPost\\Facades\\FacebookPost"
+      }
+    }
+  }
+}
