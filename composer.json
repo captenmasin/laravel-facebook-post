@@ -24,7 +24,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Captenmasin\\LaravelFacebookPost\\Providers\\FacebookPostServiceProvider"
+        "Captenmasin\\LaravelFacebookPost\\FacebookPostServiceProvider"
       ],
       "aliases": {
         "FacebookPost": "Captenmasin\\LaravelFacebookPost\\Facades\\FacebookPost"

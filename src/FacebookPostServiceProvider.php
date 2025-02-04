@@ -1,6 +1,6 @@
 <?php
 
-namespace Captenmasin\LaravelFacebookPost\Providers;
+namespace Captenmasin\LaravelFacebookPost;
 
 use Illuminate\Support\ServiceProvider;
 use Captenmasin\LaravelFacebookPost\Services\FacebookPostService;
