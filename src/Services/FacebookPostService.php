@@ -30,6 +30,23 @@ class FacebookPostService
         return $this->sendRequest('GET', $url);
     }
 
+    public static function create(array $data): array
+    {
+        if (!empty($data['url'])) {
+            return self::createPostWithLink($data['url'], $data['text'] ?? null);
+        }
+
+        if (!empty($data['media'])) {
+            return self::createPostWithPhoto($data['media'], $data['message'] ?? null);
+        }
+
+        if (!empty($data['message'])) {
+            return self::createPost($data['message']);
+        }
+
+        return self::failureResponse(422, 'Invalid post data. Must contain at least a message, link, or photo.');
+    }
+
     /**
      * Publish a new text post.
      */

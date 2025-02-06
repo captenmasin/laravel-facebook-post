@@ -11,7 +11,7 @@ Create, update, delete and get posts from a facebook page in laravel.
 composer require captenmasin/laravel-facebook-post
 ```
 ## Configuration
-You can publish the configuration file `config/facebook.php` optionally by using the following command:
+You can publish the configuration file `config/facebook-post.php` optionally by using the following command:
 ``` 
 php artisan vendor:publish --provider="Captenmasin\LaravelFacebookPost\FacebookPostServiceProvider" --tag="config"
 ```
