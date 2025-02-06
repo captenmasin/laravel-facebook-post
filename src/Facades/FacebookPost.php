@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Facade;
 
 /**
  * @method static array getPosts()
+ * @method static array create(?string $text = null, ?string $url = null, ?string $media = null)
  * @method static array createPost(string $message)
  * @method static array createPostWithLink(string $url, ?string $message = null)
  * @method static array createPostWithPhoto(string $url, ?string $message = null)
